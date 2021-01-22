@@ -1,3 +1,4 @@
+  
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,202 +6,248 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">     
     <link rel="stylesheet" href="style.css" />
+    <!-- Con esto indicamos que queremos que nuestra página se adapte al tamaño de un celular" -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Data Lovers</title>
   </head>
 
   <body>
-    <!-- Barra de navegación -->
-    <div class="menu">
-      <ul>
-        <li class="navbar">Novedades</li>
-        <li class="navbar">Colecciones</li>
-        <li class="navbar">Sale</li>
-        <li><img src="imagenes/Título.PNG" class="name"></li>
-        <li class="navbar">Sucursales</li>
-        <li class="navbar">Contacto</li>
-        <li class="navbar"><img src="imagenes/profile-user.png" class="user"></li>
-        <li class="navbar"><img src="imagenes/buy.png" class="car"></li>
-      </ul>
-    </div>
-    <hr class="endNavbar">
+
+      <!-- Barra de navegación -->
+
+    <header>
+      <div class="toggle-btn" id="menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="logo">
+          <img src="imagenes/Título.PNG" class="name">
+      </div>
+
+      <nav id="nav">
+        <ul>
+          <li><p>Colecciones</p></li>
+          <li><p>Sale</p></li>
+          <li><p>Sucursales</p></li>
+          <li><p>Contacto</p></li>
+          <li><p><img src="imagenes/profile-user.png" class="user"></p></li>
+          <li><p><img src="imagenes/buy.png" class="car"></p></li>
+        </ul>
+      </nav>
+    </header>
+    <hr class="endNavbar">    
 
     <!-- Buscar Pokempon por nombre -->
+    
     <div class="search">
       <section>
         <div class="findPokemon">
-          <p class="favoritePokemon">¡Encuentra tu Pokemón favorito!</p>
+          <p class="favoritePokemon">¡Encuentra tu Pokemón favorito!</p>         
           <div class="flexbox">
-          <input type="text" placeholder="Nombre" class="pokemonName">
-          <button type="button" class="searchName">Buscar</button>        
-        </div>
-        </div>
-        <hr class="line">
+          <input type="text" placeholder="Nombre" class="pokemonName" id="nameToSearch">
+          <button type="button" class="searchName" id= "searchName">Buscar</button> 
+          </div>         
+        <hr class="line">          
+       </div>
       </section>
+    </div> 
+    
+    <!-- Filtros -->    
 
-       <!-- Lista de Pokemones -->
-        <div class="pokemonList">
-          <section class="pokemons">            
-            <p class="pokemones">POKEMONES</p>
-            <p>Lista de pokemones</p>
-            <p>Lista de pokemones</p>
-          </section>
-        </div>
-    </div>  
-      
-    <!-- Filtros -->
     <div class="filter">
+      <!-- Nota: El &#9660 es para la fechita que va hacia abajo -->
+    <label for="toggle">Filtros <span>&#9660;</span> </label> 
+      <input type="checkbox" id="toggle"/>
+
+      <div class="filterList">
+
       <section>        
           <ul>
-            <li><p class="filtros">Filtros</p></li>
-            <li><p class="nombre">Nombre</p></li>
+          <div class="filters2">
 
+           <div class="filters1">
+
+            <div class="alpha">
+            <li><p class="nombre">Nombre</p></li>
+            
             <div class="alphabet">          
-            <li><input type="checkbox"></li>
+            <li><input id="az" type="checkbox"></li>
             <p class="az">Nombre alfabético (A-Z)</p>
             </div>
 
-            <div class="alphabet">   
-            <li><input type="checkbox"></li>
-            <p class="az">Nombre alfabético (Z-A)</p>
             </div>
 
-            <li><p class="tipo" >Tipo</p></li>  
+            <div class="alphabet1">   
+            <li><input id="za" type="checkbox"></li>
+            <p class="az">Nombre alfabético (Z-A)</p>
+            </div>
+            
+            <div class="type">
+            <li><p class="tipo">Tipo</p></li>  
 
             <div class="alphabet">           
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="bug"></li>
             <p class="az">Bicho</p>
             </div>
 
             <div class="alphabet">   
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="dark"></li>
             <p class="az">Siniestro</p>
             </div>
-
+            </div>
+           
+            <div class="type2">
             <div class="alphabet">  
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="dragon"></li>
             <p class="az">Dragón</p>
             </div>
 
             <div class="alphabet">  
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="electric"></li>
             <p class="az">Eléctrico</p>
             </div>
+            </div>
 
+            <div class="type2">
             <div class="alphabet">  
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="fairy"></li>
             <p class="az">Hada</p>
             </div>
 
             <div class="alphabet">  
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="fighting"></li>
             <p class="az">Lucha</p>
             </div>
+            </div>
 
+            <div class="type2">
             <div class="alphabet">  
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="fire"></li>
             <p class="az">Fuego</p>
             </div>
 
-            <div class="alphabet">  
-            <li><input type="checkbox"></li>
-            <p class="az">Volador</p>
-            </div>
-
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="ghost"></li>
             <p class="az">Fantasma</p>
             </div>
-
+            </div>
+           
+            <div class="type2">
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="grass"></li>
             <p class="az">Planta</p>
             </div>
 
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="ground"></li>
             <p class="az">Tierra</p>
             </div>
+            </div> 
 
+            <div class="type2">
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="ice"></li>
             <p class="az">Hielo</p>
             </div>
 
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="normal"></li>
             <p class="az">Normal</p>
             </div>
-
+            </div>
+           
+            <div class="type2">
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="poison"></li>
             <p class="az">Veneno</p>
             </div>
 
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="psychic"></li>
             <p class="az">Psiquico</p>
             </div>
+            </div>
 
+            <div class="type2">
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="rock"></li>
             <p class="az">Roca</p>
             </div>
 
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="tFilter" type="checkbox" id="steel"></li>
             <p class="az">Acero</p>
-            </div>
+            </div> 
 
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>    
+            <li><input name="tFilter" type="checkbox" id="water"></li>    
             <p class="az">Agua</p>
-            </div>
-
-            <li><p class="caramelos">Número de caramelos</p></li>
+            </div>            
+           </div>
+          </div>
+           
             
+            <li><p class="caramelos">Número de caramelos</p></li>
+
+            <div class="numCandy">
+
+            <div class="filtCandy">
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
-            <p class="az">1</p>
-            </div>
+            <li><input name="cFilter" type="checkbox" id="12"></li>
+            <p class="az">12</p>
+            </div>  
 
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
-            <p class="az">3</p>
-            </div>
-
-            <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="cFilter" type="checkbox" id="25"></li>
             <p class="az">25</p>
             </div>
+            </div>
+
+            <div class="filtCandy2">
 
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="cFilter" type="checkbox" id="50"></li>
             <p class="az">50</p>
             </div>
 
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="cFilter" type="checkbox" id="100"></li>
             <p class="az">100</p>
             </div>
-
+            </div>
+            
+            <div class="lastCandies">
             <div class="alphabet"> 
-            <li><input type="checkbox"></li>
+            <li><input name="cFilter" type="checkbox" id="400"></li>
             <p class="az">400</p>
             </div>
+            </div>            
 
-            <button type="button" class="searchFilter">Buscar</button>
+            </div>
+
+            <button type="button" class="searchFilter" id="search">Buscar</button>
             <li></li>
-          </ul>        
+          </div>
+          </ul>               
       </section>
     </div>
-    </div>
+    </div>  
 
-   
-   
+      <!-- Lista de Pokemones -->
 
-
+      <div class="pokemonList">
+        <section class="pokemons">
+          <div class="atras">
+          <button type="button" class="back" id="regresar"> &#x25C4; Atrás</button>            
+          <p class="pokemons" id="pokemons">POKEMONES</p>
+          </div>
+          <div class="pokemonss" id="pokemonss"></div>
+        </section>
+      </div>
 
 
     <div id="root"></div>
