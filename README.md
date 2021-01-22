@@ -22,14 +22,14 @@ Se buscar crear una plataforma Web amigable e intuitiva que permita visualizar y
 
 Pensando en todos los usuarios de Pokemón Go que les gusta capturar a los personajes para poder competir en torneos o simplemente coleccionarlos, se creó **POKE-SHOP** una plataforma Web / Móvil amistosa que permite a los usuarios adquirir el pokemón que deseen, sin importar el lugar o temporada en el que se encuentren.
 
-![](/src/imagenes/Encuesta_pokemon.png)
+![](/src/imagenes/Encuesta_pokemon.jpg)
 
 ## Proceso
 
-![](/src/imagenes/proceso.png)
+![](/src/imagenes/proceso.jpg)
 
 ## Usabilidad
 
-![](/src/imagenes/1.png)
-![](/src/imagenes/2.png)
-![](/src/imagenes/3.png)
+![](/src/imagenes/1.jpg)
+![](/src/imagenes/2.jpg)
+![](/src/imagenes/3.jpg)
