@@ -2,10 +2,10 @@
 
 Plataforma Web de visualización y filtrado de información.
 
-![](/imagenes/pokeshop.jpg)
+![](/src/imagenes/pokeshop.jpg)
 Imagen: Plataforma Web.
 
-![](/imagenes/aplicacion_pokeshop.jpg)
+![](/src/imagenes/aplicacion_pokeshop.jpg)
 Imagen: Dispositivo móvil.
 
 ## El Proyecto
@@ -22,14 +22,14 @@ Se buscar crear una plataforma Web amigable e intuitiva que permita visualizar y
 
 Pensando en todos los usuarios de Pokemón Go que les gusta capturar a los personajes para poder competir en torneos o simplemente coleccionarlos, se creó **POKE-SHOP** una plataforma Web / Móvil amistosa que permite a los usuarios adquirir el pokemón que deseen, sin importar el lugar o temporada en el que se encuentren.
 
-![](/imagenes/Encuesta_pokemon.png)
+![](/src/imagenes/Encuesta_pokemon.png)
 
 ## Proceso
 
-![](/imagenes/proceso.png)
+![](/src/imagenes/proceso.png)
 
 ## Usabilidad
 
-![](/imagenes/1.png)
-![](/imgenes/2.png)
-![](/imgenes/3.png)
+![](/src/imagenes/1.png)
+![](/src/imagenes/2.png)
+![](/src/imagenes/3.png)
