@@ -1,51 +1,5 @@
 import {filterAZ, filterZA, getpokemoncito, searchName} from '../src/data.js';
-
-let mock= [{
-     "num": "223",
-     "name": "remoraid",
-     "type": [
-      "water"
-    ],
-    "evolution": {
-      "candy": "remoraid candy",
-      "next-evolution": [{
-        "num": "224",
-        "name": "octillery",
-        "candy-cost": "50"
-      }]
-    }},
-
-    {"num": "093",
-    "name": "haunter",
-    "type": [
-      "ghost",
-      "poison"
-    ],
-    "evolution": {
-      "candy": "gastly candy",
-      "next-evolution": [{
-        "num": "094",
-        "name": "gengar",
-        "candy-cost": "100"
-      }]
-    }},
-    {
-      "num": "001",
-      "name": "bulbasaur",
-      "type": [
-        "grass",
-      ],
-      "evolution":{
-        "candy": "bulbasaur candy",
-        "next-evolution": [{
-        "num": "002",
-        "name": "ivysaur",
-        "candy-cost": "25",
-      }]   
-    }}
-]
-    
-
+import {mock, mockOrdenByAZ, mockOrdenByZA} from './helpers.js'
 
 describe('esta prueba es para checar el funcionamiento de los filtros por tipo y dulces', () => {
   it('con el tipo y dulce definido el pokemon debe ser un objeto conteniendo a remoraid', () => {
@@ -87,28 +41,14 @@ describe('esta prueba checa el buscador por nombre del pokemons', () =>{
   })
 });
 
-describe('esta prueba checa el funcionamiento de la funcion sort', () => {
-  it('se organizan alfabeticamente de A-Z', () => {
-    expect(filterAZ(mock)).toEqual(expect.arrayContaining[(
-      expect.objectContaining(
-        expect.objectContaining(
-          expect.objectContaining(
-        )
-       )
-    ))])
+
+describe('esta prueba checa el funcionamiento de la funcion sort', () =>{
+  it('se organizan alfabeticamente de A-Z', () =>{
+    expect(filterAZ(mock)).toStrictEqual(mockOrdenByAZ)
   })
 
-  it('se organizan alfabeticamente Z-A', () => {
-    expect(filterZA(mock)).toEqual(expect.arrayContaining([expect.objectContaining({"name" : "remoraid"}), expect.objectContaining({"name" : "haunter"})]));
-  });
-});
+  it('se organizan alfabeticamente de Z-A', () =>{
+    expect(filterZA(mock)).toStrictEqual(mockOrdenByZA)
+  })
 
-[{"evolution": {"candy": "bulbasaur candy", "next-evolution":
- [{"candy-cost": "25", "name": "ivysaur", "num": "002"}]}, 
- "name": "bulbasaur", "num": "001", "type": ["grass"]}, 
- {"evolution": {"candy": "gastly candy", "next-evolution":
-  [{"candy-cost": "100", "name": "gengar", "num": "094"}]}, 
-  "name": "haunter", "num": "093", "type": ["ghost", "poison"]},
-   {"evolution": {"candy": "remoraid candy", "next-evolution":
-    [{"candy-cost": "50", "name": "octillery", "num": "224"}]},
-     "name": "remoraid", "num": "223", "type": ["water"]}]
+});

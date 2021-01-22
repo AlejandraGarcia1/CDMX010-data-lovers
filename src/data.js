@@ -46,7 +46,7 @@ export let filterAZ = (pokemons)=>{
     if (a.name > b.name) return 1;
     return 0;
   })
-  console.log(sortedPokemons)
+  
   return sortedPokemons
 }
 

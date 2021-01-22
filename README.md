@@ -1,16 +1,19 @@
 # Data Lovers
 
-Plataforma Web de visualización y filtrado de información.
+Plataforma Web de filtrado y visualización de información.
+<br>
 
+Vista: Plataforma Web.
 ![](/src/imagenes/pokeshop.jpg)
-Imagen: Plataforma Web.
 
+<br>
+
+Vista: Dispositivo Móvil.
 ![](/src/imagenes/aplicacion_pokeshop.jpg)
-Imagen: Dispositivo móvil.
 
 ## El Proyecto
 
-Se buscar crear una plataforma Web amigable e intuitiva que permita visualizar y filtrar la información en base a las necesidades del usuario.
+Se buscar crear una plataforma Web amigable e intuitiva que permita filtrar y visualizar la información en base a las necesidades del usuario.
 
 **Duración:** 3 semanas.
 <br>
@@ -20,16 +23,16 @@ Se buscar crear una plataforma Web amigable e intuitiva que permita visualizar y
 
 ## Contexto
 
-Pensando en todos los usuarios de Pokemón Go que les gusta capturar a los personajes para poder competir en torneos o simplemente coleccionarlos, se creó **POKE-SHOP** una plataforma Web / Móvil amistosa que permite a los usuarios adquirir el pokemón que deseen, sin importar el lugar o temporada en el que se encuentren.
+Pensando en todos los usuarios de Pokemón Go que les gusta capturar a los personajes para poder competir en torneos o simplemente coleccionarlos, se creó **POKE-SHOP** una plataforma Web/Móvil amistosa que permite a los usuarios adquirir el pokemón que deseen, sin importar el lugar o temporada en el que se encuentren.
 
-![](/src/imagenes/Encuesta_pokemon.jpg)
+![Encuesta](src/imagenes/encuesta.png)
 
 ## Proceso
 
-![](/src/imagenes/proceso.jpg)
+![proceso](/src/imagenes/proceso.jpg)
 
 ## Usabilidad
 
-![](/src/imagenes/1.jpg)
-![](/src/imagenes/2.jpg)
-![](/src/imagenes/3.jpg)
+![paso1](/src/imagenes/1.jpg)
+![paso2](/src/imagenes/2.jpg)
+![paso3](/src/imagenes/3.jpg)
