@@ -31,13 +31,13 @@ Pensando en todos los usuarios de Pokemón Go que les gusta capturar a los pokem
 
 ## Proceso
 
-![proceso](src/imagenes/proceso.jpg)
+![proceso](src/imagenes/proceso.JPG)
 
 ## Usabilidad
 
-![paso1](src/imagenes/1.jpg)
-![paso2](src/imagenes/2.jpg)
-![paso3](src/imagenes/3.jpg)
+![paso1](src/imagenes/1.JPG)
+![paso2](src/imagenes/2.JPG)
+![paso3](src/imagenes/3.JPG)
 
 ## Retrospectiva
 
