@@ -28,15 +28,27 @@ Pensando en todos los usuarios de Pokemón Go que les gusta capturar a los pokem
 <br>
 
 ![Encuesta](src/imagenes/encuesta.png)
+<br>
 
 ## Proceso
 
 ![proceso](src/imagenes/proceso.JPG)
+<br>
 
 ## Usabilidad
 
+### Secciones de filtrado:
+
 ![paso1](src/imagenes/1.JPG)
+<br>
+
+### Filtrado de la información:
+
 ![paso2](src/imagenes/2.JPG)
+<br>
+
+### Tarjeta informativa:
+
 ![paso3](src/imagenes/3.JPG)
 
 ## Retrospectiva
