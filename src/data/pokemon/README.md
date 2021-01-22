@@ -1,37 +1,33 @@
-# Pokémon
+# Data Lovers
 
-Pokémon GO es una experiencia de juego internacional que cuenta con más de mil
-millones de descargas y ha sido nombrada "el mejor juego para móviles" por
-Game Developers Choice Awards y "la mejor aplicación del año" por TechCrunch
-(tomado de Google Play). Los usuarios del juego se convierten en "Maestros/
-entrenadores de Pokémon" y pueden:
+Plataforma Web de visualización y filtrado de información.
 
-- **Descubrir el mundo Pokémon:** explorar y descubrir nuevos Pokémon allá
-  donde vayan.
-- **Atrapar** distintos Pokémon para completar su Pokédex.
-- **Pelear** contra Pokémon de otros entrenadores y conquistar un gimnasio.
-- **Competir** en épicos combates contra otros entrenadores.
-- **Hacer equipo** con otros entrenadores para atrapar poderosos Pokémon
-  durante las incursiones.
+![Pokeshop](./imagenes/pokeshop.jpg)
+Imagen: Plataforma Web.
 
-## Hallazgos
+![Pokeresponsive](./imagenes/aplicacion pokeshop.jpg)
+Imagen: Dispositivo móvil.
 
-Para entender mejor qué necesidades complementarias a la app tienen los
-usuarios, hicimos una rápida investigación (research) y estos son algunos
-de los hallazgos.
+## El Proyecto
 
-- Los Pokémon tienen características únicas que determinan las decisiones que
-  toma el usuario (tipo, debilidad, peso, multiplicador, etc.)
-- Un maestro Pokémon antes de salir a casar los Pokémon tienen que:
-  saber el top 10 de frecuencia de aparición de los Pokémon.
-- Los Pokémon tienen distintos tipos y debilidades de combate. Estas
-  características son importantes cuando un maestro Pokémon elige al Pokémon
-  más adecuado para su batalla. Hay veces que tiene que elegir a los que
-  tienen menos cantidad de debilidades y saber de que tipo son. Por ello, es
-  importante para un maestro Pokémon poder ordenarlos por estas 2
-  características.
-- Los Pokémon evolucionan y es importante para un
-  maestro Pokémon saber cuántas y cuáles son las evoluciones que tienen antes y
-  después.
-- Los Pokémon se alimentan de caramelos y un maestro Pokémon necesita saber
-  cuántos caramelos necesita un Pokémon para evolucionar.
+Se buscar crear una plataforma Web amigable e intuitiva que permita visualizar y filtrar la información en base a las necesidades del usuario.
+
+**Duración:** 3 semanas.
+**Métodos:** Investigación, Ideación, Wireframes, Prototipado, Creación y Testeo.
+**Herramientas:** HTML, CSS y Java Script.
+
+## Contexto
+
+Pensando en todos los usuarios de Pokemón Go que les gusta capturar a los personajes para poder competir en torneos o simplemente coleccionarlos, se creó **POKE-SHOP** una plataforma Web / Móvil amistosa que permite a los usuarios adquirir el pokemón que deseen, sin importar el lugar o temporada en el que se encuentren.
+
+![Encuesta](./imagenes/Encuesta pokemon.png)
+
+## Proceso
+
+![Proceso](./imagenes/proceso.png)
+
+## Usabilidad
+
+![1](./imagenes/1.png)
+![2](./imgenes/2.png)
+![3](./imgenes/3.png)
