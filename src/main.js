@@ -7,7 +7,6 @@ import data from './data/pokemon/pokemon.js';
 const poks = data;
 const pokemons = poks.pokemon;
 
-
 let typesToFilter = [];
 let candyToFilter = [];
 
@@ -27,18 +26,16 @@ function getAPokemon (e) {
 	}   
 }
 
-/*BUSCAR POR EL NOMBRE INDIVIDUAL DE POKEMÓN*/
-
+/*BUSCAR POR EL NOMBRE INDIVIDUAL DEl POKEMÓN*/
 let searchByName = document.getElementById ("searchName");
 searchByName.onclick = function () {
 	let nameToSearch = document.getElementById ("nameToSearch").value.toLowerCase(); 
-
+	//función modulada - Referirse al "data.js"
     let filteredPokemon = searchName(pokemons, nameToSearch)
     document.getElementById("pokemonss").innerHTML = filteredPokemon.map(pokeIndividualInfo).join('');
 }
 
 /*BOTON PARA BUSCAR CON LOS FILTROS*/
-
 let searchFilters = document.getElementById ("search");
 searchFilters.onclick = function () {  
 
@@ -67,44 +64,47 @@ let arrangeZA = document.getElementById("za").checked;
 
 	//Filtrar por orden alfabético.
 	if (arrangeAZ == true){
+		//función modulada - Referirse al "data.js"
 		let sortedPokemons = filterAZ(pokemons)
 		document.getElementById("pokemonss").innerHTML = sortedPokemons.map(pokeCard).join('');		
 	}
 	
 	if (arrangeZA == true){
+		//función modulada - Referirse al "data.js"
 		let sortedPokemons = filterZA(pokemons)
 		document.getElementById("pokemonss").innerHTML = sortedPokemons.map(pokeCard).join('');		
 	}
-
+	//Nuevo arreglo utilizando el "operador spread" y "set" a fin de que la información no se repita. 
 	let uniqueTypeFilters = [...new Set(typesToFilter)]		//eslint-disable-line 
-	let uniqueCandyFilters = [...new Set(candyToFilter)]	//eslint-disable-line 
+	let uniqueCandyFilters = [...new Set(candyToFilter)]	//eslint-disable-line	
 
+	//función modulada - Referirse al "data.js"
 	let filteredPokemons = getpokemoncito(uniqueTypeFilters, uniqueCandyFilters, pokemons)
 
-
+	//regresa la función si esta ordenada alfabeticamente "AZ" -"ZA"
 	if(uniqueTypeFilters.length == 0 && uniqueCandyFilters.length == 0){
 		return
+	//filtros de dulces y tipo seleccionados -> 3 niveles para acceder a la información	
 	}else if(uniqueTypeFilters.length > 0 && uniqueCandyFilters.length > 0){
 		document.getElementById("pokemonss").innerHTML = filteredPokemons.map((mapCandy) => mapCandy.map((poke) => poke.map(pokeCard).join('')).join(''))
+	//filtros de dulces o tipo seleccionados	
 	}else if (uniqueTypeFilters.length > 0 || uniqueCandyFilters.length > 0){
 		document.getElementById("pokemonss").innerHTML = filteredPokemons.map ((poke) => poke.map (pokeCard).join('')).join('');
 
 	}
 }
 
-let refrescar = document.getElementById("regresar");
-   
-refrescar.onclick = function () {   
+let refrescar = document.getElementById("regresar");  
 
+refrescar.onclick = function () {
     document.getElementById("pokemonss").innerHTML = pokemons.map(pokeCard).join('')  
 }
 
 /* QUERY DEL NAVBAR */
-
 let desplegar = document.getElementById("menu");
 
 desplegar.onclick = function () {
 
-      var navbar = document.getElementById("nav");      
-      navbar.classList.toggle("show");
+    var navbar = document.getElementById("nav");      
+    navbar.classList.toggle("show");
 };
